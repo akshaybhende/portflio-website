@@ -363,6 +363,23 @@
     });
 
     // Swipe is native via overflow-x: auto + scroll-snap
+    let dragStartX = 0;
+    let didDrag = false;
+    scroll.addEventListener('pointerdown', (e) => {
+      dragStartX = e.clientX;
+      didDrag = false;
+    }, { passive: true });
+    scroll.addEventListener('pointermove', (e) => {
+      if (Math.abs(e.clientX - dragStartX) > 10) didDrag = true;
+    }, { passive: true });
+    scroll.addEventListener('click', (e) => {
+      const link = e.target.closest('a.project');
+      if (link && didDrag) {
+        e.preventDefault();
+        didDrag = false;
+      }
+    });
+
     updateNav();
   }
 })();

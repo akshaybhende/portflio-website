@@ -741,6 +741,16 @@ img, svg { display: block; max-width: 100%; }
   scroll-snap-align: start;
   transition: background 250ms var(--ease);
 }
+a.project {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+a.project:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+a.project:hover .project-domain { text-decoration: underline; opacity: 0.85; }
 .project::before {
   content: ''; position: absolute; top: 0; left: 0; right: 0;
   height: 2px; background: var(--accent);
@@ -800,9 +810,7 @@ img, svg { display: block; max-width: 100%; }
 .project-arrow { font-family: var(--font-mono); font-size: 18px; color: var(--muted); transition: transform 250ms var(--ease), color 250ms var(--ease); }
 .project-name { font-family: var(--font-display); font-weight: 700; font-size: 28px; letter-spacing: -0.025em; line-height: 1.25; margin: 0; }
 .project-name .accent { color: var(--accent); }
-.project-domain { font-family: var(--font-mono); font-size: 12px; color: var(--accent); letter-spacing: 0.05em; }
-a.project-domain { text-decoration: none; width: fit-content; transition: opacity 200ms var(--ease); }
-a.project-domain:hover { text-decoration: underline; opacity: 0.85; }
+.project-domain { font-family: var(--font-mono); font-size: 12px; color: var(--accent); letter-spacing: 0.05em; width: fit-content; transition: opacity 200ms var(--ease); }
 .project-desc { color: rgba(232, 228, 220, 0.65); font-size: 14.5px; margin: 0; flex: 1; }
 .project-stack { font-family: var(--font-mono); font-size: 11px; color: var(--muted); letter-spacing: 0.05em; padding-top: 14px; border-top: 1px dashed var(--border); }
 .project-stack b { color: var(--text); font-weight: 400; }
