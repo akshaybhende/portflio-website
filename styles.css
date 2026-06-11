@@ -355,7 +355,6 @@ img, svg { display: block; max-width: 100%; }
    Slot machine
    ============================================================ */
 .slot {
-  display: none; /* hidden for now */
   border: 1px solid var(--border);
   background: linear-gradient(180deg, #1a1916 0%, #15140f 100%);
   padding: 36px 32px;
@@ -993,6 +992,33 @@ a.project:hover .project-domain { text-decoration: underline; opacity: 0.85; }
 .anim-bite { animation: fish-bite 4s ease-in-out infinite; transform-origin: 50% 100%; transform-box: fill-box; }
 
 /* ============================================================
+   Stack spinner section
+   ============================================================ */
+.slot-grid {
+  display: grid;
+  grid-template-columns: 1.05fr 1fr;
+  gap: 64px;
+  align-items: center;
+  padding-top: 40px;
+}
+.slot-copy .section-title {
+  margin: 0 0 24px;
+}
+.slot-copy .section-title .accent { color: var(--accent); }
+.slot-copy p {
+  color: rgba(232, 228, 220, 0.6);
+  margin: 0;
+  font-size: 16px;
+  max-width: 440px;
+}
+.slot-section .slot {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  align-self: center;
+}
+
+/* ============================================================
    Contact + football
    ============================================================ */
 .contact-grid {
@@ -1217,6 +1243,7 @@ a.project:hover .project-domain { text-decoration: underline; opacity: 0.85; }
   .focus { position: relative; top: auto; }
   .fun-intro { grid-template-columns: 1fr; gap: 24px; }
   .fun-panels { grid-template-columns: 1fr; }
+  .slot-grid { grid-template-columns: 1fr; gap: 40px; }
   .contact-grid { grid-template-columns: 1fr; gap: 40px; }
   .nav-inner { position: relative; }
   .nav-links { display: none; }
