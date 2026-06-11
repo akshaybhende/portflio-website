@@ -1209,9 +1209,10 @@ a.project:hover .project-domain { text-decoration: underline; opacity: 0.85; }
    Responsive
    ============================================================ */
 @media (max-width: 960px) {
-  .hero { padding-top: 100px; }
+  .hero { padding-top: 100px; min-height: auto; height: auto; }
   .hero-copy { max-width: none; }
   .hero-video-wrap {
+    display: none;
     right: 0;
     left: 0;
     width: 100%;
