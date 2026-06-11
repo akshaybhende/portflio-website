@@ -18,7 +18,7 @@
      ============================================================ -->
 <nav class="nav">
   <div class="container nav-inner">
-    <a href="#top" class="nav-brand">Akshay Bhende <span class="sep"></span> <span>Portfolio</span></a>
+    <a href="#top" class="nav-brand">Akshay Bhende</a>
     <div class="nav-links">
       <a href="#experience">Experience</a>
       <a href="#projects">Projects</a>
@@ -33,79 +33,36 @@
      HERO + SLOT MACHINE
      ============================================================ -->
 <section class="hero" id="top" data-screen-label="01 Hero">
+  <div class="hero-video-wrap" aria-hidden="true">
+    <video
+      class="hero-video"
+      muted
+      playsinline
+      preload="auto"
+    >
+      <source src="images/video.mp4" type="video/mp4" />
+    </video>
+  </div>
+
   <div class="container hero-inner">
     <div class="hero-copy">
-      <div class="hero-tag reveal" style="--reveal-delay: 100ms">
-        <span class="dot"></span>
-        Available · Senior / Staff frontend
-      </div>
-
       <h1>
-        <span class="line"><span style="--line-delay: 250ms">Akshay</span></span>
-        <span class="line"><span class="accent" style="--line-delay: 400ms">Bhende.</span></span>
+        <span class="line"><span style="--line-delay: 250ms">I ship with AI.</span></span>
+        <span class="line"><span class="accent" style="--line-delay: 400ms">I ship for real.</span></span>
       </h1>
 
-      <p class="hero-sub reveal" style="--reveal-delay: 600ms">
-        14+ years &nbsp;·&nbsp; React &nbsp;·&nbsp; Next.js &nbsp;·&nbsp; TypeScript &nbsp;·&nbsp; React Native
+      <p class="hero-tagline reveal" style="--reveal-delay: 600ms">
+        I've adopted AI as how I work.
+        Cursor, Claude, and agentic workflows wired into every sprint: faster
+        iteration, fewer handoffs, and production-grade interfaces your team
+        can trust from day one.
       </p>
 
-      <p class="hero-tagline reveal" style="--reveal-delay: 700ms">
-        I close the gap between design and production.
-        Senior frontend engineer who ships pixel-perfect, performant
-        interfaces from design tokens to deployed code.
-      </p>
-
-      <div class="hero-ctas reveal" style="--reveal-delay: 800ms">
+      <div class="hero-ctas reveal" style="--reveal-delay: 700ms">
         <a href="#projects" class="btn">View Work <span class="arrow">→</span></a>
         <a href="#contact" class="btn btn-ghost">Get in touch</a>
       </div>
     </div>
-
-    <!-- SLOT MACHINE -->
-    <aside class="slot reveal" style="--reveal-delay: 600ms" aria-label="Stack slot machine">
-      <div class="slot-head">
-        <span>Stack Spinner</span>
-        <span class="led">Live</span>
-      </div>
-
-      <div class="slot-stats">
-        <div class="slot-stat">
-          <span class="stat-label">Tokens</span>
-          <b class="tokens-val">100</b>
-        </div>
-        <div class="slot-token-track" title="Tokens remaining">
-          <div class="slot-token-fill"></div>
-        </div>
-        <div class="slot-stat">
-          <span class="stat-label">Points</span>
-          <b class="points-val">0</b>
-        </div>
-      </div>
-
-      <div class="slot-display">
-        <div class="center-line"></div>
-        <div class="reel"><div class="reel-strip"></div></div>
-        <div class="reel"><div class="reel-strip"></div></div>
-        <div class="reel"><div class="reel-strip"></div></div>
-
-        <!-- Win overlay + confetti sit absolute over display -->
-        <div class="slot-win-overlay" aria-hidden="true">
-          <div class="badge">Jackpot!</div>
-        </div>
-        <div class="confetti" aria-hidden="true"></div>
-      </div>
-
-      <div class="slot-controls">
-        <div class="slot-result">Press spin to begin</div>
-        <button class="slot-btn" type="button">
-          <span class="lever"></span>
-          Spin <span class="btn-cost">−5</span>
-        </button>
-        <button class="slot-reset-btn" type="button" aria-label="Reset tokens">
-          ↺ Reset
-        </button>
-      </div>
-    </aside>
   </div>
 
   <div class="container hero-scroll">
@@ -113,24 +70,6 @@
     <span>Scroll</span>
   </div>
 </section>
-
-<!-- ============================================================
-     MARQUEE TICKER
-     ============================================================ -->
-<div class="ticker" aria-hidden="true">
-  <div class="ticker-track">
-    <span>React</span><span>Next.js App Router</span><span>TypeScript</span>
-    <span>Tailwind CSS</span><span>Design Systems</span><span>React Native</span>
-    <span>Expo</span><span>Supabase</span><span>Zustand</span><span>React Query</span>
-    <span>Cursor</span><span>Claude Code</span><span>Component Architecture</span>
-    <span>Performance</span><span>Figma</span>
-    <span>React</span><span>Next.js App Router</span><span>TypeScript</span>
-    <span>Tailwind CSS</span><span>Design Systems</span><span>React Native</span>
-    <span>Expo</span><span>Supabase</span><span>Zustand</span><span>React Query</span>
-    <span>Cursor</span><span>Claude Code</span><span>Component Architecture</span>
-    <span>Performance</span><span>Figma</span>
-  </div>
-</div>
 
 <!-- ============================================================
      VALUE PROPOSITION
@@ -882,6 +821,75 @@
           <span class="handle">github.com/akshaybhende <span class="arrow">↗</span></span>
         </a>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     STACK SPINNER
+     ============================================================ -->
+<section class="section section-divider slot-section" id="play" data-screen-label="08 Play">
+  <div class="container">
+    <header class="section-head">
+      <span class="num">06</span>
+      <span>Playground</span>
+      <span class="rule"></span>
+    </header>
+
+    <div class="slot-grid">
+      <div class="slot-copy reveal">
+        <h2 class="section-title">
+          Front end is about<br/><span class="accent">fun &amp; creativity.</span>
+        </h2>
+        <p>
+          Spin the reels and match your stack. A little reminder that the best
+          interfaces still leave room for play.
+        </p>
+      </div>
+
+      <aside class="slot reveal" style="--reveal-delay: 100ms" aria-label="Stack slot machine">
+      <div class="slot-head">
+        <span>Stack Spinner</span>
+        <span class="led">Live</span>
+      </div>
+
+      <div class="slot-stats">
+        <div class="slot-stat">
+          <span class="stat-label">Tokens</span>
+          <b class="tokens-val">100</b>
+        </div>
+        <div class="slot-token-track" title="Tokens remaining">
+          <div class="slot-token-fill"></div>
+        </div>
+        <div class="slot-stat">
+          <span class="stat-label">Points</span>
+          <b class="points-val">0</b>
+        </div>
+      </div>
+
+      <div class="slot-display">
+        <div class="center-line"></div>
+        <div class="reel"><div class="reel-strip"></div></div>
+        <div class="reel"><div class="reel-strip"></div></div>
+        <div class="reel"><div class="reel-strip"></div></div>
+
+        <div class="slot-win-overlay" aria-hidden="true">
+          <div class="badge">Jackpot!</div>
+        </div>
+        <div class="confetti" aria-hidden="true"></div>
+      </div>
+
+      <div class="slot-controls">
+        <div class="slot-result">Press spin to begin</div>
+        <button class="slot-btn" type="button">
+          <span class="lever"></span>
+          Spin <span class="btn-cost">−5</span>
+        </button>
+        <button class="slot-reset-btn" type="button" aria-label="Reset tokens">
+          ↺ Reset
+        </button>
+      </div>
+      </aside>
     </div>
   </div>
 </section>
